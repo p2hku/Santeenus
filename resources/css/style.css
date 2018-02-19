@@ -407,38 +407,47 @@ footer {
 
 /* Küttesüsteemid */
 
-.kyte-container {
+.container {
   padding-top: 10rem;
   text-align: left;
 }
 
 
 
-.kyte-sisu {
+.sisu {
   display: flex;
   justify-content: space-between;
 }
 
-.kyte-pilt {
+.pilt {
   width: 50%;
 }
 
-.kyte-pilt img {
+.pilt img {
   width: 100%;
   padding: 3rem;
 }
 
-.kyte-tekst p {
-
+.tekst p {
+  max-width: 25rem;
   margin-left: 0rem;
 }
 
-.kyte-tekst {
+.tekst h2 {
+  margin-bottom: 1rem;
+}
+
+.tekst {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 25rem;
-  margin-left: 5rem;
+  margin-left: 8rem;
+}
+
+.tekst ul {
+  list-style-type: circle;
+  padding-left: 2rem;
+  line-height: 1.5rem;
 }
 
 
