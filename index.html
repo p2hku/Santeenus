@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="./resources/images/favicon.ico"/>
+    <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <meta charset="utf-8">
+    <title>Santeenus.ee - Torutööde eksperdid</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="content">
+        <div class="header-left">
+          <img src="./resources/images/uuslogo.png">
+          <span id="dark"><a href="index.html"><h2>SAN</h2></a></span>
+          <span id="light"><a href="index.html"><h2>TEENUS.EE</h2></a></span>
+        </div>
+        <nav class="desktop">
+          <ul>
+            <li><a href="#">TEENUSED</a></li>
+            <li><a href="#">HINNAPÄRING</a></li>
+            <li><a href="#">MEIST</a></li>
+            <li><a id="kontakt" href="#">KONTAKT</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <ul>
+            <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
+            <li><a href="#" class="button">Join us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <div class="front-slides">
+      <span class="slideshow" id="slideshow1"></span>
+      <span class="slideshow" id="slideshow2"></span>
+      <span class="slideshow" id="slideshow3"></span>
+
+
+      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+      <script> var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+      showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slideshow");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+  }
+      </script>
+
+      <script>
+      var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slideshow");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+      </script>
+
+    </div>
+
+    <div class="service-container">
+      <div class="service-items">
+        <div class="column left">
+          <div class="service-kyte">
+            <a href="#">
+              <img src=./resources/images/kyttesysteemid.png>
+              <h3>
+                <span>KÜTTESÜSTEEMID</span>
+              </h3>
+            </a>
+            <a href="#">
+              <p><span>Müüme ja paigaldame erinevaid küttesüsteeme</span></p>
+            </a>
+          </div>
+          <div class="service-sanitaar">
+            <a href="#">
+              <img src=./resources/images/sanitaar.png>
+              <h3>
+                <span>SANTÖÖD</span>
+              </h3>
+            </a>
+            <a href="#">
+              <p><span>Teostame kõikvõimalikke sanitaartehnilisi töid.</span></p>
+            </a>
+          </div>
+        </div>
+        <div class="column right">
+          <div class="service-kaevud">
+            <a href="#">
+              <img src=./resources/images/kaevud.png>
+              <h3>
+                <span>KAEVUDE PUHASTUS</span>
+              </h3>
+            </a>
+            <a href="#">
+              <p><span>Puhastame ja parandame kaevusid</span></p>
+            </a>
+          </div>
+          <div class="service-septikud">
+            <a href="#">
+              <img src=./resources/images/septikud.png>
+              <h3>
+                <span>SEPTIKUTE PAIGALDUS</span>
+              </h3>
+            </a>
+            <a href="#">
+              <p><span>Müüme ja paigaldame septikuid</span></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="references-container">
+      <div class="image-container">
+        <img src="./resources/images/1.jpg" alt="">
+        <span>Tehtud töö</span>
+      </div>
+      <div class="image-container">
+        <img src="./resources/images/2.jpg" alt="">
+        <span>Tehtud töö</span>
+      </div>
+      <div class="image-container">
+        <img src="./resources/images/3.jpg" alt="">
+        <span>Tehtud töö</span>
+      </div>
+      <div class="image-container">
+        <img src="./resources/images/4.jpg" alt="">
+        <span>Tehtud töö</span>
+      </div>
+      <div class="image-container">
+        <img src="./resources/images/5.jpg" alt="">
+        <span>Tehtud töö</span>
+      </div>
+      <div class="image-container">
+        <img src="./resources/images/6.jpg" alt="">
+        <span>Tehtud töö</span>
+      </div>
+      <div class="image-container">
+        <img src="./resources/images/7.jpg" alt="">
+        <span>Tehtud töö</span>
+      </div>
+      <div class="image-container">
+        <img src="./resources/images/8.jpg" alt="">
+        <span>Tehtud töö</span>
+      </div>
+    </div>
+
+
+    <div class="about-us-container">
+      <div class="section-container">
+        <div class="about-us-text">
+          <h3><span>Meie eesmärgiks</span></h3>
+          <span><p>On pakkuda oma klientidele alati kvaliteetseid teenuseid. Teostame kõikvõimalikke sanitaartehnilisi töid, nende hulgas kanalisatsioonitöid,
+            torustike ja küttesüsteemide paigaldust ja hooldust.
+            Meie pikaajaline kogemus antud valdkonnas tagab, et kõik tööd on teostatud vastavalt kehtivatele standarditele. 
+            Võtke meiega ühendust ja teeme Teile pakkumise. *Hinnapäringu kast*</p></span>
+        </div>
+        <div class="about-us-image">
+          <span><img src=./resources/images/rakkevahetus.jpg></span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="contact-container">
+
+    </div>
+
+
+
+
+    <!--<div class="banner-container">
+      <div class="banner">
+        <span id="left"><h1>Torud on vanad ja lekivad?</h1></span>
+        <span id="middle"><h1>Küttesüsteem vajab paigaldamist?</h1></span>
+        <span id="right"><h1>Meie lahendame Teie probleemid!</h1></span>
+        <h2>Võta ühendust</h2>
+      </div>
+    </div>
+
+    -->
+
+<!--
+    <div class="main-banner">
+      <h1>Torud on vanad ja lekivad? Küttesüsteem vajab ühendamist? Lahendame need probleemid Teie eest!</h1>
+    </div>
+
+    <div class="mission">
+      <h2>Meie eesmärgiks on pakkuda oma klientidele kvaliteetset teenust. Teostame kõikvõimalikke sanitaartehnilisi töid, nende hulgas kanalisatsioonitöid,
+torustike ja küttesüsteemide paigaldust ja hooldust.
+Meie pikaajaline kogemus antud valdkonnas tagab, et kõik tööd on teostatud kvaliteetselt.
+Võtke meiega ühendust ja teeme Teile pakkumise. *Hinnapäringu kast*</h2>
+    </div>
+
+
+      <div class="???-container">
+        <div id="service-desktop" class="startcontainer">
+          <div class="row">
+            <div class="section sanitaar">
+              <img src=./resources/images/santehnika.jpg>
+              <h3>Sanitaartehnilised tööd</h3>
+            </div>
+            <div class="section kyte">
+              <img src=./resources/images/kyte.jpg>
+              <h3>Küttesüsteemide paigaldus</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="section kaev">
+              <img src=./resources/images/kaevud.jpg>
+              <h3>Kaevude puhastus</h3>
+            </div>
+            <div class="section septik">
+              <img src=./resources/images/septikud.jpg>
+              <h3>Septikute paigaldus</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-us">
+        <p>Meie eesmärgiks on pakkuda oma klientidele laia valikut kvaliteetseid teenuseid.
+          Teostame kõikvõimalikke sanitaartehnilisi töid, nende hulgas kanalisatsioonitöid,
+          torustike ja küttesüsteemide paigaldust ja hooldust.
+          Meie pikaajaline kogemus antud valdkonnas tagab, et kõik tööd on teostatud vastavalt kehtivatele standarditele.
+          Võtke meiega ühendust ja teeme Teile pakkumise. *Hinnapäringu kast*
+        </p>
+      </div>
+
+  -->
+
+      <footer></footer>
+
+  </body>
+</html>
