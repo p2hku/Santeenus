@@ -405,8 +405,41 @@ footer {
 }
 
 
+/* Küttesüsteemid */
+
+.kyte-container {
+  padding-top: 10rem;
+  text-align: left;
+}
 
 
+
+.kyte-sisu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kyte-pilt {
+  width: 50%;
+}
+
+.kyte-pilt img {
+  width: 100%;
+  padding: 3rem;
+}
+
+.kyte-tekst p {
+
+  margin-left: 0rem;
+}
+
+.kyte-tekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 25rem;
+  margin-left: 5rem;
+}
 
 
 
