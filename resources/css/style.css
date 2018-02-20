@@ -93,7 +93,7 @@ nav a:hover {
 
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 899px) {
   header .content {
     flex-direction: column;
     text-align: center;
@@ -137,11 +137,13 @@ nav a:hover {
 /* Slideshow */
 
   .front-slides {
-    padding-top: 6rem;
-    display: flex;
+    padding-top: 8rem;
+    width: 100%;
+
   }
 
   .slideshow {
+    padding-top: 8reM;
     height: 35rem;
     width: 100%;
   }
@@ -168,8 +170,21 @@ nav a:hover {
   }
 
 .w3-display-left {
-  position: absolute;
-  bottom: 10rem;
+}
+
+@media only screen and (max-width: 1270px) {
+  .slideshow {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  #slideshow2 {
+    background-position: left;
+  }
+  #slideshow1 {
+    background-position: left;
+  }
 }
 
 
@@ -209,8 +224,6 @@ nav a:hover {
 
 
 /* Service container */
-
-
 
 
 .service-container {
@@ -253,6 +266,20 @@ nav a:hover {
 .column {
   display: inline-block;
 }
+
+@media only screen and (max-width: 699px) {
+  .service-container {
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+
+  }
+  .column {
+    display: block;
+    margin: auto;
+  }
+}
+
 
 /* References */
 
