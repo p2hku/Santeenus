@@ -138,29 +138,30 @@ nav a:hover {
 
   .front-slides {
     padding-top: 6rem;
+    display: flex;
   }
 
   .slideshow {
-    height: 30rem;
-    width: 100%
+    height: 35rem;
+    width: 100%;
   }
 
   #slideshow1 {
-    background-image: url(../images/bathroom.jpg);
+    background-image: url(../images/torud2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
   #slideshow2 {
-    background-image: url(../images/bathroom2.jpg);
+    background-image: url(../images/radiaator.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
   }
 
   #slideshow3 {
-    background-image: url(../images/bathroom5.jpg);
+    background-image: url(../images/kaevupilt.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -416,7 +417,7 @@ footer {
 
 .sisu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .pilt {
@@ -425,10 +426,11 @@ footer {
 
 .pilt img {
   width: 100%;
-  padding: 3rem;
+  padding: 5rem;
 }
 
 .tekst p {
+  min-width: 15rem;
   max-width: 25rem;
   margin-left: 0rem;
 }
