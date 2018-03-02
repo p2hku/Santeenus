@@ -253,8 +253,8 @@ nav a:hover {
 
 @media only screen and (max-width: 759px) {
   @keyframes text1 {
-    0%   {left: 100px; top: 200px; opacity: 0}
-    13%  {left: 100px; top: 200px; opacity: 0.8}
+    0%   {left: 75px; top: 200px; opacity: 0}
+    13%  {left: 75px; top: 200px; opacity: 0.8}
     30%  {opacity: 0.8}
     38%  {opacity: 0}
     75%  {}
@@ -283,9 +283,9 @@ nav a:hover {
 
 @media only screen and (max-width: 759px) {
   @keyframes text2 {
-      0%   {left: 100px; top: 0px;}
-      7%   {left: 100px; top: 0px;}
-      12%  {left: 100px; top: 300px;}
+      0%   {left: 75px; top: 0px;}
+      7%   {left: 75px; top: 0px;}
+      12%  {left: 75px; top: 300px;}
       30%  {opacity: 0.8}
       38%  {opacity: 0}
       100% {}
@@ -364,6 +364,16 @@ nav a:hover {
   }
 }
 
+@media only screen and (max-width: 630px) {
+  @keyframes text4 {
+      0%    {opacity: 0}
+      72%   {left: -150px; top: 300px; opacity: 0}
+      80%   {left: 150px; top: 300px; opacity: 0.8}
+      92%   {left: 150px; top: 300px; opacity: 0.8}
+      100%  {left: 150px; top: 300px; opacity: 0.05}
+  }
+}
+
 #text-5 {
   display: block;
   -webkit-animation-name: text5; /* Safari 4.0 - 8.0 */
@@ -389,6 +399,17 @@ nav a:hover {
       38%  {left: 100px; top: 370px; opacity: 0}
       52%  {left: 100px; top: 370px; opacity: 0.8}
       64%  {left: 100px; top: 370px; opacity: 0.8}
+      72%  {opacity: 0}
+      100% {opacity: 0}
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  @keyframes text5 {
+      0%   {opacity: 0}
+      38%  {left: 50px; top: 370px; opacity: 0}
+      52%  {left: 50px; top: 370px; opacity: 0.8}
+      64%  {left: 50px; top: 370px; opacity: 0.8}
       72%  {opacity: 0}
       100% {opacity: 0}
   }
