@@ -36,46 +36,37 @@
       <span class="slideshow" id="slideshow1"></span>
       <span class="slideshow" id="slideshow2"></span>
       <span class="slideshow" id="slideshow3"></span>
-      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
     </div>
 
+    <h1 class="text" id="text-1">Torud on vanad ja lekivad?</h1>
+    <h1 class="text" id="text-2">Mitte enam kaua!</h1>
 
-      <script> var slideIndex = 1;
-  showDivs(slideIndex);
+    <h1 class="text" id="text-3">Väljas on külm?</h1>
+    <h1 class="text" id="text-4">Toome sooja tuppa!</h1>
 
-  function plusDivs(n) {
-      showDivs(slideIndex += n);
-  }
+    <h1 class="text" id="text-5">Puhas vesi - see on väärtus</h1>
 
-  function showDivs(n) {
+<!--
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
       var i;
       var x = document.getElementsByClassName("slideshow");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length} ;
       for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
+        x[i].style.display = "none";
       }
-      x[slideIndex-1].style.display = "block";
-  }
-      </script>
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 60000);
+      }
+    </script>
 
-      <script>
-      var slideIndex = 0;
-carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("slideshow");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 50000); // Change image every 2 seconds
-}
-      </script>
+-->
+
 
 
     <div class="service-container">
