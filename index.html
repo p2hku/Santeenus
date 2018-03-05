@@ -22,14 +22,41 @@
         </div>
         <nav class="desktop">
           <ul>
-            <li><a href="#">TEENUSED</a></li>
-            <li><a href="#">HINNAPÄRING</a></li>
-            <li><a href="#">MEIST</a></li>
-            <li><a id="kontakt" href="#">KONTAKT</a></li>
+            <div class="dropdown">
+              <a class="dropbtn">TEENUSED</a>
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <a href="http://www.santeenus.ee/kuttesusteemid">Küttesüsteemid</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="http://www.santeenus.ee/santeenused">Santööd</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="http://www.santeenus.ee/kaevud">Kaevude puhastus</a>
+                </div>
+                <div class="dropdown-item">
+                  <a id="septik-border" href="http://www.santeenus.ee/septikud">Septikute paigaldus</a>
+                </div>
+              </div>
+            </div>
+            <li><a href="#hinnaparing">HINNAPÄRING</a></li>
+            <li><a href="http://www.santeenus.ee/meist">MEIST</a></li>
+            <li><a id="kontakt" href="http://www.santeenus.ee/kontakt">KONTAKT</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <script type="text/javascript">
+      $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 5000);
+      });
+    </script>
+
 
 
     <div class="front-slides">

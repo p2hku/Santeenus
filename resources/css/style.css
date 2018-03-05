@@ -83,7 +83,7 @@ nav a {
 }
 
 #kontakt {
-  border-right: 0px solid;
+  border-right: none;
 }
 
 nav a:hover {
@@ -91,6 +91,74 @@ nav a:hover {
   opacity: 1;
 
 }
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid #cc0f13;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    z-index: 1;
+    border: 1px solid #999;
+    border-radius: 4px;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #999;
+    padding: 12px 20px !important;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    border-right: none;
+    border-bottom: 1px solid #999;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #cc0f13;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: #cc0f13;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -247,8 +315,8 @@ nav a:hover {
     13%  {left: 200px; top: 200px; opacity: 0.8}
     30%  {opacity: 0.8}
     38%  {opacity: 0}
-    75%  {}
-    100% {}
+    75%  {opacity: 0}
+    100% {opacity: 0}
 }
 
 @media only screen and (max-width: 759px) {
@@ -336,7 +404,7 @@ nav a:hover {
 @keyframes text4 {
     0%    {left: 550px; top: 400px; opacity: 0}
     71%   {left: 550px; top: 400px; opacity: 0}
-    72%   {left: 850px; top: 400px; opacity: 0}
+    74%   {left: 850px; top: 400px; opacity: 0}
     80%   {left: 550px; top: 400px; opacity: 0.8}
     92%   {left: 550px; top: 400px; opacity: 0.8}
     100%  {left: 550px; top: 400px; opacity: 0.05}
@@ -683,7 +751,6 @@ footer {
 /* Küttesüsteemid */
 
 .container {
-  padding-top: 10rem;
   text-align: left;
 }
 
@@ -702,6 +769,12 @@ footer {
   width: 100%;
   padding: 5rem;
 }
+
+@media only screen and (max-width: 899px) {
+  header .content {
+    flex-direction: column;
+    text-align: center;
+  }
 
 .tekst p {
   min-width: 15rem;
@@ -726,7 +799,9 @@ footer {
   line-height: 1.5rem;
 }
 
-
+.subsection {
+  padding-top: 8rem;
+}
 
 
 
