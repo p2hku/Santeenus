@@ -771,14 +771,15 @@ nav a:hover {
 /* Contact */
 
 #hinnaparing {
-  position: absolute;
 }
 
 #hide-button {
-  height: 5rem;
-  width: 5rem;
+}
+
+#hide-button h2 {
+  height: 3rem;
+  width: 8rem;
   background-color: black;
-  bottom: 5rem;
 }
 
 /* Footer */
