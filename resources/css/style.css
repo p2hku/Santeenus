@@ -839,8 +839,9 @@ nav a:hover {
 }
 
 #hide-button h2 {
+  margin: auto;
   position: relative;
-  bottom: 30px;
+  bottom: 70px;
   height: 3rem;
   width: 8rem;
   background-color: black;
