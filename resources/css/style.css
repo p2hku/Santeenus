@@ -836,9 +836,10 @@ nav a:hover {
 }
 
 #hide-button {
+  text-align: center;
 }
 
-#hide-button {
+#hide-button span {
   position: relative;
   bottom: 160px;
   height: 3rem;
