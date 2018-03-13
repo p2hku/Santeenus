@@ -828,6 +828,11 @@ nav a:hover {
 
 /* Contact */
 
+.contact-container {
+  margin-bottom: 3rem;
+  position: absolute;
+}
+
 #hinnaparing {
 }
 
@@ -835,6 +840,8 @@ nav a:hover {
 }
 
 #hide-button h2 {
+  position: relative;
+  bottom: 30px;
   height: 3rem;
   width: 8rem;
   background-color: black;
@@ -940,6 +947,7 @@ footer {
   line-height: 1.4;
   text-align: left;
   margin-left: 14rem;
+  margin-bottom: 3rem;
 
 }
 
