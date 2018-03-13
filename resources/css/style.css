@@ -848,7 +848,15 @@ nav a:hover {
   background-color: black;
   margin-left: auto;
   margin-right: auto;
+  opacity: 0.5;
 }
+
+@media only screen and (max-width: 1349px) {
+   #hide-button {
+     top: 575px;
+   }
+  }
+
 
 /* Footer */
 
@@ -945,13 +953,16 @@ footer {
 
 /*teenused*/
 
+.teenused-big-container {
+  border-bottom: 2px solid #cc0f13;
+}
+
 .teenused-container {
   padding-top: 8rem;
   line-height: 1.4;
   text-align: left;
   margin-left: 14rem;
-  margin-bottom: 3rem;
-
+  padding-bottom: 3rem;
 }
 
 .teenused-container h2 {
