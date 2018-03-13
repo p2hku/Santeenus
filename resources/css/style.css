@@ -844,6 +844,7 @@ nav a:hover {
   height: 3rem;
   width: 8rem;
   background-color: black;
+  margin: auto;
 }
 
 /* Footer */
