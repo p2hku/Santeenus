@@ -863,6 +863,12 @@ nav a:hover {
     }
   }
 
+@media only screen and (max-width: 709px) {
+   #hide-button {
+     top: 555px;
+    }
+  }
+
 
 /* Footer */
 
