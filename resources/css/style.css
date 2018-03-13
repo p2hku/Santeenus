@@ -524,15 +524,6 @@ nav a:hover {
 
 
 
-  #left {
-    position: relative;
-    right: 15rem;
-  }
-
-  #middle {
-    position: relative;
-    right: 5rem;
-  }
 
 
 /* Service container */
@@ -587,26 +578,45 @@ nav a:hover {
   margin-bottom: 5rem;
 }
 
+
+@media only screen and (max-width: 839px) {
+  .left {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .left {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+}
+
 @media only screen and (max-width: 1270px) {
   .service-container {
     padding-top: 35rem;
   }
-
-
 }
 
 
 
-@media only screen and (max-width: 699px) {
-  .service-container {
-    display: flex;
-    justify-content: center;
+
+@media only screen and (max-width: 794px) {
+  .left {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
-  .column {
-    display: block;
+}
+
+  .right {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
-}
+
+
+
 
 /* References buttons */
 
@@ -714,6 +724,8 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem;
+  margin-right: 1rem;
 
 }
 
@@ -724,11 +736,14 @@ nav a:hover {
   margin-right: 4rem;
   line-height: 1.5;
   max-width: 28rem;
+  color: #999;
+  font-weight: 500;
 
 }
 
 .about-us-text h3 {
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .about-us-text h4 {
@@ -737,7 +752,8 @@ nav a:hover {
   padding: 0.5rem;
   border-radius: 4px;
   margin-top: 1rem;
-  font-weight: 600;
+  font-weight: 500;
+
 }
 
 .about-us-text h4:hover {
@@ -749,6 +765,7 @@ nav a:hover {
 
 .about-us-image {
   width: 40rem;
+  padding-top: 2rem;
   margin-right: 3rem;
 }
 
@@ -767,6 +784,47 @@ nav a:hover {
   margin-right: 2rem;
 }
 
+@media only screen and (max-width: 1020px) {
+  .section-container {
+    display: block;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  .about-us-container {
+    text-align: center;
+  }
+
+  .about-us-text {
+    width: 30rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .about-us-text p {
+    margin-right: 0;
+  }
+
+  .about-us-image {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .section-container img {
+    width: 30rem;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 589px) {
+   .about-us-text, .about-us-text p {
+    width: 25rem;
+  }
+
+  .about-us-image img {
+    width: 90%;
+    margin: auto;
+  }
+}
 
 /* Contact */
 
@@ -871,9 +929,54 @@ footer {
 .tekst ul {
   list-style-type: circle;
   padding-left: 2rem;
-  line-height: 1.5rem;
+  line-height: 1.5rem;'
 }
 
+
+/*teenused*/
+
+.teenused-container {
+  padding-top: 8rem;
+  line-height: 1.4;
+  text-align: left;
+  margin-left: 14rem;
+
+}
+
+.teenused-container h2 {
+  padding-bottom: 1rem;
+}
+
+.teenused-container ul li {}
+
+
+.teenused-container ul li:before {
+ content: "\0BB \020";
+ }
+
+ @media only screen and (max-width: 1020px) {
+   .teenused-container {
+     margin-left: 8rem;
+   }
+ }
+
+ @media only screen and (max-width: 839px) {
+   .teenused-container {
+     margin-left: 6rem;
+   }
+ }
+
+ @media only screen and (max-width: 760px) {
+   .teenused-container {
+     margin-left: 4rem;
+   }
+ }
+
+ @media only screen and (max-width: 575px) {
+   .teenused-container {
+     margin-left: 1rem;
+   }
+ }
 
 
 
