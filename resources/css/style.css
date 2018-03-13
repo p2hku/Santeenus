@@ -68,10 +68,9 @@ nav li {
 
 nav a {
   vertical-align: bottom;
-  line-height: 1.2;
   font-size: 1rem;
   border: none;
-  padding: 0.3rem 1.2rem;
+  padding: 0.3rem 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -771,7 +770,15 @@ nav a:hover {
 
 /* Contact */
 
-.contact-container {
+#hinnaparing {
+  position: absolute;
+}
+
+#hide-button {
+  height: 5rem;
+  width: 5rem;
+  background-color: black;
+  bottom: 5rem;
 }
 
 /* Footer */
