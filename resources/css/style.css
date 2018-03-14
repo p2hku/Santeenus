@@ -835,9 +835,7 @@ nav a:hover {
 #hinnaparing {
 }
 
-#hide-button {
 
-}
 
 #hide-button {
   text-align: center;
@@ -853,19 +851,19 @@ nav a:hover {
 
 @media only screen and (max-width: 1349px) {
    #hide-button {
-     top: 595px;
+     top: 590px;
    }
   }
 
 @media only screen and (max-width: 889px) {
    #hide-button {
-     top: 575px;
+     top: 570px;
     }
   }
 
 @media only screen and (max-width: 709px) {
    #hide-button {
-     top: 555px;
+     top: 550px;
     }
   }
 
@@ -902,37 +900,136 @@ footer {
 
 .container {
   text-align: left;
+  line-height: 1.4;
+  margin: auto;
 }
 
 .subheading {
-  padding-top: 10rem;
+  padding-top: 8rem;
+  margin-bottom: 3rem;
 }
 
-.tekst, .pilt {
-  display: inline-block;
-  align-items: center;
+
+.tekst p, ul {
+  font-size: 0.9rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  min-width: 40rem;
+  padding-top: 0;
+  margin-right: 3rem;
 }
 
-.tekst {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.tekst h3 {
+  padding-left: 2rem;
+  font-weight: 600;
 }
+
+#kyte h3, #kaevud h3, #septikud h3, #toru h3 {
+  font-size: 0.9rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  min-width: 40rem;
+  padding-top: 0;
+  margin-right: 3rem;
+}
+
 
 .sisu {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
 
-.pilt {
-  width: 50%;
-}
+
 
 .pilt img {
-  width: 100%;
-  padding: 5rem;
+  width: 35rem;
+  padding: 0rem 4rem 4rem 0rem;
 }
+
+
+.tekst {
+  display: inline-block;
+}
+
+.tekst ul {
+  list-style-type: circle;
+  padding-left: 2rem;
+  margin-left: 3rem;
+}
+
+strong {
+ font-weight: bold;
+ color: gray;
+}
+
+@media only screen and (max-width: 1499px) {
+  .pilt img {
+    width: 30rem;
+  }
+  .tekst p, ul {
+    min-width: 30rem;
+  }
+  #kyte h3, #kaevud h3, #septikud h3, #toru h3 {
+    min-width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 1139px) {
+  .pilt img {
+    width: 25rem;
+    padding: 0rem 3rem 4rem 0rem;
+  }
+  .tekst p, ul {
+    min-width: 25rem;
+  }
+  #kyte h3, #kaevud h3, #septikud h3, #toru h3 {
+    min-width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .pilt img {
+    width: 25rem;
+    padding: 0rem 2rem 4rem 0rem;
+  }
+  .tekst p, ul{
+    min-width: 20rem;
+    margin-right: 1rem;
+  }
+  #kyte h3, #kaevud h3, #septikud h3, #toru h3 {
+    min-width: 20rem;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 859px) {
+
+  .sisu {
+    flex-direction: column;
+  }
+  .pilt img {
+    margin-left: 3rem;
+    width: 80%;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+  .tekst p, ul {
+    min-width: 80%;
+    margin-bottom: 2rem;
+  }
+  #kyte h3, #kaevud h3, #septikud h3, #toru h3 {
+    min-width: 80%;
+    margin-bottom: 2rem;
+  }
+  .tekst {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+
+
+
 
 @media only screen and (max-width: 899px) {
   header .content {
@@ -941,26 +1038,7 @@ footer {
   }
 }
 
-.tekst p {
-  min-width: 15rem;
-  max-width: 25rem;
-  margin-left: 0rem;
-}
 
-.tekst h2 {
-  margin-bottom: 1rem;
-}
-
-.tekst {
-  display: block;
-  margin-left: 8rem;
-}
-
-.tekst ul {
-  list-style-type: circle;
-  padding-left: 2rem;
-  line-height: 1.5rem;'
-}
 
 
 /*teenused*/
