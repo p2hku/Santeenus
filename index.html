@@ -53,6 +53,47 @@
 	       });
     </script>
 
+    <script type="text/javascript">
+    ;(function( $, window, document, undefined )
+{
+$.fn.doubleTapToGo = function( params )
+{
+  if( !( 'ontouchstart' in window ) &&
+    !navigator.msMaxTouchPoints &&
+    !navigator.userAgent.toLowerCase().match( /windows phone os 7/i ) ) return false;
+
+  this.each( function()
+  {
+    var curItem = false;
+
+    $( this ).on( 'click', function( e )
+    {
+      var item = $( this );
+      if( item[ 0 ] != curItem[ 0 ] )
+      {
+        e.preventDefault();
+        curItem = item;
+      }
+    });
+
+    $( document ).on( 'click touchstart MSPointerDown', function( e )
+    {
+      var resetItem = true,
+        parents	  = $( e.target ).parents();
+
+      for( var i = 0; i < parents.length; i++ )
+        if( parents[ i ] == curItem[ 0 ] )
+          resetItem = false;
+
+      if( resetItem )
+        curItem = false;
+    });
+  });
+  return this;
+};
+})( jQuery, window, document );
+    </script>
+
 
 
 
@@ -808,19 +849,39 @@
       <div class="section-container">
         <div class="about-us-text">
           <h3><span>Meie eesmärgiks</span></h3>
-            <p>On pakkuda oma klientidele alati kvaliteetseid teenuseid. Tuginedes aastatepikkusele kogemusele ja teadmistele erinevate küttelahenduste ja sanitaartehniliste seadmete paigaldamisel
-              ja hooldamisel oskame arvestada erinevate tegurite ja ettetulevate olukordadega. Meie põhitegevusaladeks on torutööd,
-              küttesüsteemide hooldus ja paigaldus, kaevude puhastus ja remont ning septikute müük ja paigaldus. Oleme tegutsenud selles
-              valdkonnas juba üheksa aastat ja omame kõigi tööde teostamiseks vastavat kvalifikatsiooni.
-              Sellest tulenevalt võite usaldada meile erialase nõustamise ja tehnilise teostuse. Meie oleme teie pädevad partnerid torutööde valdkonnas.
-              Kõigi tellimuste puhul teeme oma tööd alati kohusetundlikult ja täpselt. Teostatud töödele anname garantii! Vastavalt olukorrale pakume kõige otstarbekamaid ja
-              kulutõhusamaid lahendusi. Kliendina võite tugineda meie teadmistele ja omandatud kogemustele. Asume Viljandis ja meie peamiseks tegevuspiirkonnaks on kujunenud Lõuna-Eesti, vajadusel teostame töid ka kaugemal.</p>
+            <p>On pakkuda oma klientidele alati kvaliteetseid teenuseid. Tuginedes aastatepikkusele kogemusele ja teadmistele
+              erinevate küttelahenduste ja sanitaartehniliste seadmete paigaldamisel
+              ja hooldamisel oskame arvestada erinevate tegurite ja ettetulevate olukordadega.</p>
+              <p>Meie põhitegevusaladeks on torutööd,
+              küttesüsteemide hooldus ja paigaldus, kaevude puhastus ja remont ning septikute müük ja paigaldus.
+              Oleme tegutsenud selles valdkonnas üheksa aastat ja omame kõigi tööde teostamiseks vastavat kvalifikatsiooni.
+              Sellest tulenevalt võite usaldada meid erialase nõustamise ja tehnilise teostuse osas.
+              Meie oleme teie pädevad partnerid torutööde valdkonnas.</p>
+              <p>Kõigi tellimuste puhul teeme oma tööd alati kohusetundlikult ja täpselt.
+              Teostatud töödele anname garantii! Vastavalt olukorrale pakume kõige otstarbekamaid ja
+              kulutõhusamaid lahendusi. Kliendina võite tugineda meie teadmistele ja omandatud kogemustele.
+              Asume Viljandis ja meie peamiseks tegevuspiirkonnaks on kujunenud Lõuna-Eesti, vajadusel teostame töid ka kaugemal.</p>
+
             <a href="#hinnaparing"><span><h4>Hinnapäring</h4></span></a>
           </span>
         </div>
-        <div class="about-us-image">
-          <span><img src=./resources/images/rakkevahetus.jpg></span>
-        </div>
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 5,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVm0cJGSqFGn1U97eoEp7iM6L5-JYSEFo&callback=initMap">
+
+    </script>
       </div>
     </div>
 

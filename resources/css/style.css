@@ -725,6 +725,18 @@ nav a:hover {
   }
 }
 
+@media only screen and (max-width: 1020px) {
+  .image-container {
+    width: 49%;
+  }
+}
+
+@media only screen and (max-width: 794px) {
+  .image-container {
+    width: 90%;
+  }
+}
+
 /* About us */
 
 .about-us-container {
@@ -734,12 +746,11 @@ nav a:hover {
 }
 
 .about-us-text {
-  margin-left: 3rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding: 0rem 0rem 2rem 2rem;
   margin-right: 1rem;
 
 }
@@ -778,11 +789,6 @@ nav a:hover {
   transform: translateY(4px);
 }
 
-.about-us-image {
-  width: 40rem;
-  padding-top: 2rem;
-  margin-right: 3rem;
-}
 
 .section-container {
   display: flex;
@@ -790,55 +796,73 @@ nav a:hover {
 
 }
 
-.section-container div {
-  margin-bottom: 4rem;
+
+
+
+#map {
+  height: 400px;
+  width: 400px;
+
 }
 
-.section-container img {
-  width: 100%;
-  margin-right: 2rem;
-}
+@media only screen and (max-width: 1079px) {
+  .about-us-text p {
+    margin-right: 2rem;
+  }
+  .about-us-text {
+    margin-right: 0rem;
+  }
 
 @media only screen and (max-width: 1020px) {
   .section-container {
-    display: block;
+    display: flex;
     flex-direction: column;
-    margin-left: auto;
   }
   .about-us-container {
     text-align: center;
   }
 
+  #map {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    width: 500px;
+  }
+
   .about-us-text {
-    width: 30rem;
-    margin: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
+    margin-bottom: 2rem;
   }
 
   .about-us-text p {
-    margin-right: 0;
-  }
-
-  .about-us-image {
     width: 100%;
-    padding-top: 0;
+    margin-right: 0rem;
+    max-width: 100rem;
   }
 
-  .section-container img {
-    width: 30rem;
-    margin: auto;
-  }
 }
+
+@media only screen and (max-width: 720px) {
+  #map {
+    width: 400px;
+  }
 
 @media only screen and (max-width: 589px) {
    .about-us-text, .about-us-text p {
-    width: 25rem;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about-us-text p {
+    width: 100%;
+  }
+  #map {
+    width: 90%;
   }
 
-  .about-us-image img {
-    width: 90%;
-    margin: auto;
-  }
 }
 
 /* Contact */
