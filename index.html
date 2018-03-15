@@ -18,7 +18,7 @@
           <span id="dark"><a href="http://www.santeenus.ee"><h2>San</h2></a></span>
           <span id="light"><a href="http://www.santeenus.ee"><h2>teenus.ee</h2></a></span>
         </div>
-        <nav class="desktop">
+        <nav id="header" class="desktop">
           <ul>
             <li><a id="avaleht" href="http://www.santeenus.ee">AVALEHT</a></li>
             <div class="dropdown">
@@ -44,6 +44,15 @@
         </nav>
       </div>
     </header>
+
+    <script src="../jquery.min.js"></script>
+    <script src="doubletaptogo.js"></script>
+    <script>
+	   $( function() {
+		     $( '#header li:has(ul)' ).doubleTapToGo();
+	       });
+    </script>
+
 
 
 
