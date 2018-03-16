@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" href="../resources/images/favicon.ico"/>
     <link rel="stylesheet" href="../resources/css/reset.css">
@@ -12,21 +10,36 @@
     <title>Santeenus.ee - Torutööde eksperdid</title>
   </head>
   <body>
-
     <!-- Header -->
     <header>
       <div class="content">
         <div class="header-left">
           <img src="../resources/images/uuslogo.png">
-          <span id="dark"><a href="http://www.santeenus.ee"><h2>SAN</h2></a></span>
-          <span id="light"><a href="http://www.santeenus.ee"><h2>TEENUS.EE</h2></a></span>
+          <span id="dark"><a href="http://www.santeenus.ee"><h2>San</h2></a></span>
+          <span id="light"><a href="http://www.santeenus.ee"><h2>teenus.ee</h2></a></span>
         </div>
-        <nav class="desktop">
+        <nav id="header" class="desktop">
           <ul>
-            <li><a href="#">TEENUSED</a></li>
-            <li><a href="#">HINNAPÄRING</a></li>
-            <li><a href="#">MEIST</a></li>
-            <li><a id="kontakt" href="#">KONTAKT</a></li>
+            <li><a id="avaleht" href="http://www.santeenus.ee">AVALEHT</a></li>
+            <div class="dropdown">
+              <a class="dropbtn" href="http://htmlpreview.github.io/?https://github.com/p2hku/Santeenus/blob/master/teenused/index.html">TEENUSED</a>
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <a id="kyte-border" href="http://www.santeenus.ee/kuttesusteemid">Küttesüsteemid</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="http://www.santeenus.ee/torutood">Torutööd</a>
+                </div>
+                <div class="dropdown-item">
+                  <a href="http://www.santeenus.ee/kaevud">Kaevude puhastus</a>
+                </div>
+                <div class="dropdown-item">
+                  <a id="septik-border" href="http://www.santeenus.ee/septikud">Septikute paigaldus</a>
+                </div>
+              </div>
+            </div>
+            <li><a href="http://www.santeenus.ee/meist">MEIST</a></li>
+            <li><a id="kontakt" href="http://www.santeenus.ee/kontakt">KONTAKT</a></li>
           </ul>
         </nav>
       </div>
@@ -80,12 +93,16 @@
     </div>
 
 
+    <div id="hide-button">
+      <span><h2>Tekst</h2></span>
+    </div>
 
 
     <div id="hinnaparing" class="contact-container">
       <script src="//www.powr.io/powr.js?external-type=html"></script>
       <div class="powr-form-builder" id="0389bbd1_1518783862"></div>
     </div>
+
 
 
     <footer>

@@ -847,30 +847,27 @@ $.fn.doubleTapToGo = function( params )
 
     <div class="about-us-container">
       <div class="section-container">
-        <div class="about-us-text">
+        <div id="about-us-text">
           <h3><span>Meie eesmärgiks</span></h3>
-            <p>On pakkuda oma klientidele alati kvaliteetseid teenuseid. Tuginedes aastatepikkusele kogemusele ja teadmistele
+            <p>On pakkuda oma klientidele alati <strong>kvaliteetseid</strong> teenuseid. Tuginedes aastatepikkusele kogemusele ja teadmistele
               erinevate küttelahenduste ja sanitaartehniliste seadmete paigaldamisel
               ja hooldamisel oskame arvestada erinevate tegurite ja ettetulevate olukordadega.</p>
               <p>Meie põhitegevusaladeks on torutööd,
               küttesüsteemide hooldus ja paigaldus, kaevude puhastus ja remont ning septikute müük ja paigaldus.
-              Oleme tegutsenud selles valdkonnas üheksa aastat ja omame kõigi tööde teostamiseks vastavat kvalifikatsiooni.
+              Oleme tegutsenud selles valdkonnas üheksa aastat ja omame kõigi tööde teostamiseks vastavat <strong>kvalifikatsiooni</strong>.
               Sellest tulenevalt võite usaldada meid erialase nõustamise ja tehnilise teostuse osas.
               Meie oleme teie pädevad partnerid torutööde valdkonnas.</p>
               <p>Kõigi tellimuste puhul teeme oma tööd alati kohusetundlikult ja täpselt.
-              Teostatud töödele anname garantii! Vastavalt olukorrale pakume kõige otstarbekamaid ja
+              Teostatud töödele anname <strong>garantii</strong>! Vastavalt olukorrale pakume kõige otstarbekamaid ja
               kulutõhusamaid lahendusi. Kliendina võite tugineda meie teadmistele ja omandatud kogemustele.
               Asume Viljandis ja meie peamiseks tegevuspiirkonnaks on kujunenud Lõuna-Eesti, vajadusel teostame töid ka kaugemal.</p>
-
-            <a href="#hinnaparing"><span><h4>Hinnapäring</h4></span></a>
-          </span>
         </div>
         <div id="map"></div>
         <script>
           function initMap() {
-            var uluru = {lat: -25.363, lng: 131.044};
+            var uluru = {lat: 58.362, lng: 25.583};
             var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 5,
+              zoom: 11,
               center: uluru
             });
             var marker = new google.maps.Marker({

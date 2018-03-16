@@ -643,6 +643,19 @@ nav a:hover {
   color: gray;
 }
 
+.category-buttons ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#function1 {
+  margin-left: 1rem;
+}
+
+#function5 {
+  margin-right: 1rem;
+}
+
 .category-buttons a:active {
 }
 
@@ -725,19 +738,95 @@ nav a:hover {
   }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 739px) {
   .image-container {
-    width: 49%;
-  }
-}
-
-@media only screen and (max-width: 794px) {
-  .image-container {
-    width: 90%;
+    width: 80%;
   }
 }
 
 /* About us */
+
+#about-us {
+  margin-top: 0rem;
+  padding-top: 8rem;
+}
+
+#kontakt-container {
+  margin-top: 0rem;
+  padding-top: 8rem;
+}
+
+#kontakt-container {
+  margin-top: 0rem;
+  padding-top: 8rem;
+}
+
+
+
+#about-us-text-kontakt {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 0rem 2rem 0rem;
+  margin-right: 2rem;
+  width: 30rem;
+
+}
+
+#about-us-text-kontakt ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  line-height: 1.2;
+  max-width: 12rem;
+}
+
+#about-us-text-kontakt ul {
+  margin-top: 1rem;
+  max-width: 10rem;
+}
+
+
+#about-us-text-kontakt p {
+  margin-left: 0rem;
+  margin-right: 0rem;
+  line-height: 1.5;
+  max-width: 30rem;
+  color: #999;
+  font-weight: 500;
+
+}
+
+#kontakt-map {
+  height: 400px;
+  width: 400px;
+
+}
+
+#about-us-text-kontakt h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 859px) {
+  #about-us-text-kontakt ul {
+    margin-bottom: 0rem;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+   #about-us-text-kontakt, #about-us-text-kontakt p {
+    width: 80%;
+  }
+  #about-us-text-kontakt p {
+    width: 100%;
+  }
+  #kontakt-map {
+    width: 80%;
+  }
+}
+
 
 .about-us-container {
   margin-top: 3.5rem;
@@ -745,7 +834,34 @@ nav a:hover {
   border-bottom: 2px solid #cc0f13;
 }
 
-.about-us-text {
+@media only screen and (max-width: 1038px) {
+  #section-container-kontakt {
+    flex-direction: column;
+  }
+  .kontakt-map {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #about-us-text-kontakt {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+@media only screen and (max-width: 1038px) {
+  #kontakt-map {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    width: 500px;
+  }
+  }
+
+
+
+
+}
+
+#about-us-text {
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -755,9 +871,22 @@ nav a:hover {
 
 }
 
+#about-us-text ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  line-height: 1.2;
+}
 
+#about-us-text ul {
+  margin-top: 1rem;
+}
 
-.about-us-text p {
+.kontakt-map {
+  margin-bottom: 3rem;
+}
+
+#about-us-text p {
   margin-left: 0rem;
   margin-right: 4rem;
   line-height: 1.5;
@@ -767,27 +896,11 @@ nav a:hover {
 
 }
 
-.about-us-text h3 {
-  font-size: 1.5rem;
+#about-us-text h3 {
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
-.about-us-text h4 {
-  display: inline-block;
-  background-color: #FF8C00;
-  padding: 0.5rem;
-  border-radius: 4px;
-  margin-top: 1rem;
-  font-weight: 500;
-
-}
-
-.about-us-text h4:hover {
-}
-
-.about-us-text h4:active {
-  transform: translateY(4px);
-}
 
 
 .section-container {
@@ -806,20 +919,17 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1079px) {
-  .about-us-text p {
+  #about-us-text p {
     margin-right: 2rem;
   }
-  .about-us-text {
+  #about-us-text {
     margin-right: 0rem;
   }
-
+}
 @media only screen and (max-width: 1020px) {
   .section-container {
     display: flex;
     flex-direction: column;
-  }
-  .about-us-container {
-    text-align: center;
   }
 
   #map {
@@ -829,7 +939,7 @@ nav a:hover {
     width: 500px;
   }
 
-  .about-us-text {
+  #about-us-text {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -837,7 +947,7 @@ nav a:hover {
     margin-bottom: 2rem;
   }
 
-  .about-us-text p {
+  #about-us-text p {
     width: 100%;
     margin-right: 0rem;
     max-width: 100rem;
@@ -845,24 +955,26 @@ nav a:hover {
 
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 760px) {
   #map {
-    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    width: 420px;
   }
-
-@media only screen and (max-width: 589px) {
-   .about-us-text, .about-us-text p {
-    width: 90%;
+}
+@media only screen and (max-width: 730px) {
+   #about-us-text, #about-us-text p {
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
   }
-  .about-us-text p {
+  #about-us-text p {
     width: 100%;
   }
   #map {
-    width: 90%;
+    width: 80%;
   }
-
 }
 
 /* Contact */
@@ -871,8 +983,7 @@ nav a:hover {
   margin-bottom: 3rem;
 }
 
-#hinnaparing {
-}
+
 
 
 
@@ -1026,33 +1137,27 @@ strong {
   }
 }
 
-@media only screen and (max-width: 959px) {
-  .pilt img {
-    width: 25rem;
-    padding: 0rem 2rem 4rem 0rem;
-  }
-  .tekst p, ul{
-    min-width: 20rem;
-    margin-right: 1rem;
-  }
-  #kyte h3, #kaevud h3, #septikud h3, #toru h3 {
-    min-width: 20rem;
-    margin-right: 1rem;
-  }
-}
 
-@media only screen and (max-width: 859px) {
+
+@media only screen and (max-width: 959px) {
 
   .sisu {
     flex-direction: column;
   }
+  .pilt {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .pilt img {
-    margin-left: 3rem;
-    width: 80%;
+    padding: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     padding: 0rem 0rem 0rem 0rem;
   }
   .tekst p, ul {
-    min-width: 80%;
+    min-width: 40rem;
     margin-bottom: 2rem;
   }
   #kyte h3, #kaevud h3, #septikud h3, #toru h3 {
@@ -1060,7 +1165,25 @@ strong {
     margin-bottom: 2rem;
   }
   .tekst {
+    min-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .tekst {
+    min-width: 100%;
+  }
+  .tekst p, ul, h3 {
+    min-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .pilt {
+    width: 80%;
   }
 }
 
@@ -1071,7 +1194,11 @@ strong {
 
 
 @media only screen and (max-width: 899px) {
+  header {
+    height: 5.5rem;
+  }
   header .content {
+    padding: 0.5rem;
     flex-direction: column;
     text-align: center;
   }
@@ -1130,6 +1257,9 @@ strong {
  }
 
 
+#meist {
+  padding-top: 9rem;
+}
 
 
 /*

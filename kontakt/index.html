@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
@@ -45,43 +44,54 @@
       </div>
     </header>
 
-    <h2 class="subheading">Kaevude puhastus ja remont</h2>
 
-    <div class="kaevud container">
-      <div class="kaevud sisu">
-        <div id="kaevud" class="kaevud tekst">
 
-          <p>Vesi on kallihinnaline loodusvara, mille tähendust alati ei mõisteta. Selle kvaliteet võib halveneda märkamatult.
-            Kui vesi on külm, selge, lõhnatu ja maitseta, siis peetakse selle kvaliteeti heaks. Enamasti see ongi nii. Siiski on põhjust kaevuvee kvaliteeti regulaarselt kontrollida.</p>
 
-            <p>Kui kaevuvett tarbitakse pidevalt, siis ei pruugi selle omaduste aeglast halvenemist tähelegi panna. Inimene muutub vee kvaliteedi halvenemisele justkui immuunseks.
-            Seepärast soovitatakse kodukaevu vett kontrollida vähemalt kord kolme aasta tagant, isegi kui midagi probleemset pole märgata. Vett tasub kontrollida ka siis, kui perre on sündimas beebi, ees on ootamas kinnisvara müügitehing
-            või kui ümbruskonnas esineb tegevusi, mis võivad negatiivselt mõjutada vee kvaliteeti.</p>
 
-            <p>Vesi on müstiline aine, argipäeva eliksiir, mille tähtsust mõistame tihti alles siis, kui seda pole enam saada.
-              Kui teil esineb probleeme kaevuvee kvaliteediga või vajab kaev remonti,  siis helistage või saatke teade e-mailile ja leiame lahenduse.</p>
-            <h3>Tööd, mida teostame:</h3>
-          <ul>
-            <li>Joogiveekaevude puhastus ja desinfitseerimine</li>
-            <li>Veeproovi võtmine ja laborisse saatmine</li>
-            <li>Süvaveepumpade ja veevarustussüsteemide paigaldus</li>
-            <li>Veetorustiku rajamine</li>
-            <li>Maakraanide paigaldus</li>
-          </ul>
+
+    <div id="kontakt-container" class="about-us-container">
+      <div id="section-container-kontakt" class="section-container">
+        <div id="about-us-text-kontakt">
+          <h3><span>Kontakt</span></h3>
+            <p>Asume Viljandis ja meie peamiseks tegevuspiirkonnaks on kujunenud Lõuna-Eesti, vajadusel teostame töid ka kaugemal.</p>
+            <ul>
+              <li>Telefon: 58 135 496</li>
+              <li>E-mail: info@santeenus.ee</li>
+              <li>Safecare OÜ</li>
+            </ul>
+
+
         </div>
-        <div class="kaevud pilt">
-          <img src=../resources/images/kaevupilt3.jpg>
-        </div>
+        <div id="map" class="kontakt-map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 58.362, lng: 25.583};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 11,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVm0cJGSqFGn1U97eoEp7iM6L5-JYSEFo&callback=initMap">
+
+    </script>
       </div>
     </div>
 
-
+    <div id="hide-button">
+      <span><h2>Tekst</h2></span>
+    </div>
 
 
     <div id="hinnaparing" class="contact-container">
       <script src="//www.powr.io/powr.js?external-type=html"></script>
       <div class="powr-form-builder" id="0389bbd1_1518783862"></div>
     </div>
+
 
 
     <footer>
