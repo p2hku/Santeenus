@@ -4,6 +4,7 @@ html {
   text-align: center;
 }
 
+
 p {
 }
 
@@ -689,6 +690,7 @@ nav a:hover {
 }
 
 .image-container {
+  max-height: 20rem;
   width: 24%;
   display: inline-block;
   position: relative;
@@ -926,7 +928,7 @@ nav a:hover {
     margin-right: 0rem;
   }
 }
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1099px) {
   .section-container {
     display: flex;
     flex-direction: column;
@@ -1139,7 +1141,7 @@ strong {
 
 
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 1099px) {
 
   .sisu {
     flex-direction: column;
